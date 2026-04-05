@@ -1,0 +1,183 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.statBox {
+  padding: 16px 18px;
+  border-radius: 13px;
+  background: rgba(91, 110, 225, 0.06);
+  border: 1px solid rgba(91, 110, 225, 0.13);
+}
+
+.statVal {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.statLbl {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.statSub {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 20px;
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+/* spending breakdown */
+.breakdownList {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.breakdownRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.catInfo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.catName {
+  color: var(--text);
+  font-size: 13px;
+}
+
+.barWrap {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.catAmt {
+  font-weight: 600;
+  width: 80px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.catPct {
+  color: var(--muted);
+  width: 38px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* monthly comparison */
+.monthGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.monthBox {
+  text-align: center;
+  padding: 16px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.monthName {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 10px;
+}
+
+.monthIncome {
+  font-size: 12px;
+  color: #4AAB6A;
+  margin-bottom: 3px;
+}
+
+.monthExpense {
+  font-size: 12px;
+  color: #E2793D;
+  margin-bottom: 8px;
+}
+
+.monthSaved {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* observations */
+.obsList {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.obsItem {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: rgba(91, 110, 225, 0.04);
+  border: 1px solid rgba(91, 110, 225, 0.09);
+}
+
+.obsIcon {
+  font-size: 17px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.obsText {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+@media (max-width: 600px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .monthGrid {
+    grid-template-columns: 1fr;
+  }
+}

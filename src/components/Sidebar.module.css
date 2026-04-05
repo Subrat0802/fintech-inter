@@ -1,0 +1,112 @@
+.sidebar {
+  width: 210px;
+  background: var(--card);
+  border-right: 1px solid var(--border);
+  padding: 24px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  padding: 0 10px 20px;
+  letter-spacing: -0.5px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background 0.15s, color 0.15s;
+}
+
+.navBtn:hover {
+  background: rgba(91, 110, 225, 0.07);
+  color: var(--text);
+}
+
+.navBtn.active {
+  background: rgba(91, 110, 225, 0.12);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 16px;
+  width: 18px;
+  text-align: center;
+}
+
+.bottomSection {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.roleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.roleLabel {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.roleSelect {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+}
+
+.themeToggle {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 9px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  font-family: "DM Sans", sans-serif;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.themeToggle:hover {
+  background: var(--border);
+  color: var(--text);
+}
